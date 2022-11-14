@@ -2,11 +2,7 @@ Faites votre
 ```sh
 git init
 git remote add dyna3i https://github.com/KnightOfGall/dyna3i.git
-git pull dyna3i master front back
-```
-ou 
-```sh
-git clone https://github.com/KnightOfGall/dyna3i.git 
+git pull dyna3i master
 ```
 Sur sa distri linux, chacun doit exécuter la commande dans le bon répertoire xxx/dyna3i
 ```sh

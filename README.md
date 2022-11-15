@@ -1,16 +1,4 @@
-Faites votre 
-```
-git init
-git remote add dyna3i https://github.com/KnightOfGall/dyna3i.git
-git pull dyna3i master
-```
-Sur sa distribution linux, chacun doit exécuter la commande dans le bon répertoire xxx/dyna3i
-```
-docker run --rm --interactive --tty \
-  --volume $PWD:/app \
-  composer install
-  ```
-Equipe back-office :
+Equipe back-end :
 Roy Nathan, Dudognon François, Bellemare Maxime
 
 Equipe front-end :
@@ -18,6 +6,27 @@ Emonet Julian, Saguez Arthur
 
 Chef de projet : 
 Couillebault Gatien
+
+```
+git clone https://github.com/KnightOfGall/dyna3i.git
+git remote add dyna3i https://github.com/KnightOfGall/dyna3i.git
+```
+Créé un fichier .env et mettre tout ce qui est dans le .env.example dedans.
+Sur sa distribution linux, chacun doit exécuter la commande dans le bon répertoire xxx/dyna3i.
+
+Pour l'équipe back-end :
+```
+docker run --rm --interactive --tty \
+  --volume $PWD:/app \
+  composer install
+  ```
+Démarrer le docker avec  ``` ./vendor/bin/sail up ```
+Une fois démarré il faut faire 
+```./vendor/bin/sail php artisan make:model Tasks -mc```
+```./vendor/bin/sail php artisan make:model Comment -mc ```
+```./vendor/bin/sail php artisan make:model Reply -mc```
+
+Pour l'équipe front-end et la back-end, il faut merge sa branche en étant dans la branche master pour fusionner ces deux branches quand les modifications de son équipe a été modifié.
 
 Différentes étapes :
 Le chef de projet initialise le dossier avec le curl et le git init et donne accès aux deux équipes.

@@ -4,7 +4,7 @@ git init
 git remote add dyna3i https://github.com/KnightOfGall/dyna3i.git
 git pull dyna3i master
 ```
-Sur sa distri linux, chacun doit exécuter la commande dans le bon répertoire xxx/dyna3i
+Sur sa distribution linux, chacun doit exécuter la commande dans le bon répertoire xxx/dyna3i
 ```
 docker run --rm --interactive --tty \
   --volume $PWD:/app \

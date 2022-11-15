@@ -11,9 +11,11 @@ Créé un fichier .env et mettre tout ce qui est dans le .env.example dedans. Su
 
 Pour l'équipe back-end :
 
-```docker run --rm --interactive --tty \
+```
+docker run --rm --interactive --tty \
   --volume $PWD:/app \
-  composer install ```
+  composer install 
+  ```
 Démarrer le docker avec ```./vendor/bin/sail up``` Une fois démarré il faut faire ```./vendor/bin/sail php artisan make:model Tasks -mc ./vendor/bin/sail php artisan make:model Comment -mc ./vendor/bin/sail php artisan make:model Reply -mc```
 
 Pour l'équipe front-end et la back-end, il faut merge sa branche en étant dans la branche master pour fusionner ces deux branches quand les modifications de son équipe a été modifié.

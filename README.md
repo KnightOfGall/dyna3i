@@ -43,3 +43,4 @@ Problèmes rencontrés : Le chef de projet a mal effectué le ```git init``` et 
 
 Pour ```sail php artisan make:model Post -mc``` il fallut plusieurs réinstallations pour modifier post en task comment reply.
 >>>>>>> cd7d3e1d50bf21c10a225fce40abbf7589b418d1
+# test

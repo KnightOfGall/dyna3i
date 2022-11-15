@@ -26,3 +26,4 @@ que le Laravel est installé sur leur poste, elles se lancent sur leur partie re
 
 Problèmes rencontrés :
 Le chef de projet a mal effectué le ```git init``` et le ```curl -s https://laravel.build/example-app | bash``` car il a mal ordonné ces deux dossiers qui étaient dans l'un dans l'autre au lieu d'être au même endroit.
+Pour sail ```php artisan make:model Post -mc``` il fallut plusieurs réinstallations pour modifier post en task comment reply.

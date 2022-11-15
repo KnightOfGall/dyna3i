@@ -13,13 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tasks', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->unsignedInteger('user_id');
-            $table->string('title');
-            $table->text('body');
-            $table->timestamps();
-        });
+        Schema::create('posts', function (Blueprint $table) {
+        $table->bigIncrements('id');
+        $table->unsignedInteger('user_id');
+        $table->string('title');
+        $table->text('body');
+        $table->timestamps();
+    });
     }
 
     /**
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tasks');
+        Schema::dropIfExists('replies');
     }
 };

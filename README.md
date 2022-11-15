@@ -25,4 +25,4 @@ Quand les deux équipes ont le prit le projet sur Git et
 que le Laravel est installé sur leurs postes, elles se lancent sur leur partie respective.
 
 Problèmes rencontrés :
-Le chef de projet a mal effectué le ```sh git init``` et le ```sh curl -s https://laravel.build/example-app | bash``` car il a mal ordonné ces deux dossiers qui étaient dans l'un dans l'autre au lieu d'être au même endroit.
+Le chef de projet a mal effectué le ```git init``` et le ```curl -s https://laravel.build/example-app | bash``` car il a mal ordonné ces deux dossiers qui étaient dans l'un dans l'autre au lieu d'être au même endroit.
